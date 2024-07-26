@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Betting Website</h1>
+        <div class="betting-info">
+            <div class="city" id="currentCity">Current City: <span id="cityName">City Name</span></div>
+            <div class="number" id="currentNumber">Current Number: <span id="number">0</span></div>
+            <div class="city" id="nextCity">Next City: <span id="nextCityName">City Name</span></div>
+            <div class="number" id="yesterdayNumber">Yesterday's Number: <span id="yesterdayNumberValue">N/A</span>
+            </div>
+        </div>
+        <div class="timer" id="timer">Next update in: <span id="timeLeft">30s</span></div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full border-collapse border border-transparent-500" id="recordTable">
+                <thead>
+                    <tr class="bg-transparent text-white">
+                        <th class="border border-transparent-500 p-2">सट्टा का नाम</th>
+                        <th class="border border-transparent-500 p-2">समय</th>
+                        <th class="border border-transparent-500 p-2">कल आया था</th>
+                        <th class="border border-transparent-500 p-2">आज का रिज़ल्ट</th>
+                    </tr>
+                </thead>
+                <tbody id="recordBody">
+                    <!-- Records will be added dynamically here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
